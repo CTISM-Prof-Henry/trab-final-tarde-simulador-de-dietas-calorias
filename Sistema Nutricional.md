@@ -1,3 +1,5 @@
+```mermaid
+
 classDiagram
     class Usuario {
         +id: int
@@ -56,3 +58,4 @@ classDiagram
     Nutricionista --> "1" Consulta : agenda
     Consulta --> "1" Usuario : éCom
     Consulta --> "*" Alimento : discute
+```
