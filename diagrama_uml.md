@@ -1,3 +1,5 @@
+```mermaid
+
 classDiagram
     class Usuario {
         +idUsuario
@@ -64,3 +66,5 @@ classDiagram
     Usuario "1" --> "*" DicaAlimentar : acessa
     Profissional "1" --> "*" Consulta : realiza
     Consulta "*" --> "1" Usuario : pertence
+
+```
