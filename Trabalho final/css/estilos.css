@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    background-color: green;
+    position: relative;
+}
+
+li:hover{
+    background-color: rgb(0, 34, 34);
+    font-weight: 900;
+}
+
+nav{
+    background-color: green;
+    width: 100%;
+    display: flex;
+}
+
+.menu{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burguer {
+    height: 60px;
+    display: none;
+    padding: 20px;
+}
+
+/* ul li ul{ */
+.sub-menu{
+    display: none;
+    width: 273px;
+}
+
+.menu li:hover>ul{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 1;
+}
+
+/* ul li ul li:hover>ul{ */
+.sub-menu li:hover>ul{
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.contato-icones {
+    margin-top: 10px;
+}
+
+.contato-icones i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.contato-icones i:hover {
+    transform: scale(1.2);
+}
+
+.destaque {
+  padding: 30px;
+}
+
+.info-text{
+    margin: 10px;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.show{
+    display: flex !important;
+}
+
+.calculadora {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.input-section {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.resultado {
+    margin-top: 15px;
+    text-align: center;
+}
