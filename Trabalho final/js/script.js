@@ -6,11 +6,12 @@ function adicionaCallbackMetabolismoBasal() {
     const genero = document.getElementById('genero').value;
 
     let tmb = calculaMetabolismo(altura, peso, idade, genero);
+    var resultado;
     if(tmb === undefined) {
         resultado.textContent = "Por favor, preencha todos os campos corretamente.";
         resultado.style.color = "red";
     } else {
-        const resultado = document.getElementById('resultadoCalorias');
+        resultado = document.getElementById('resultadoCalorias');
         resultado.style.color = "black";
         resultado.textContent = `A sua taxa metabólica basal é de aproximadamente ${tmb.toFixed(0)} calorias por dia.`;
     }
@@ -33,3 +34,4 @@ function calculaMetabolismo(altura, peso, idade, genero) {
 }
 
 document.getElementById('calcularBtn').addEventListener('click', adicionaCallbackMetabolismoBasal);
+
