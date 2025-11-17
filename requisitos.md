@@ -1,4 +1,4 @@
-Grupo sobre simulador de dietas e calorias - fabio e dionathan
+Grupo sobre simulador de dietas e calorias - fabio, ezequias e dionathan
 
 Este trabalho visa a criação de um simulador de dietas que, por meio da conversa entre o profissional nutricionista e o paciente, permita que sejam atingidos objetivos pré-determinados, como por exemplo o emagrecimento ou a hipertrofia.
 
